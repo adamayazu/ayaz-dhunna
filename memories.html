@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Memories</title><link href="style.css" rel="stylesheet"><script src="password.js"></script></head>
+<body onload="passwordGate()">
+<div class="container"><div class="header"><div class="brand">Ayaz & Dhunna</div><div class="nav"><a href="index.html">Home</a><a href="gallery.html">Gallery</a><a href="story.html">Our Story</a><a href="memories.html">Memories</a><a href="settings.html">Settings</a></div></div>
+  <div class="panel"><h2>Write a memory</h2><textarea id="memoryInput" style="width:100%;height:120px;border-radius:8px;padding:10px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted)"></textarea><div style="margin-top:10px"><button onclick="saveMemory()" style="padding:10px 14px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#ffb3c9);border:none;color:#fff">Save</button></div></div>
+  <div class="panel" style="margin-top:12px"><h2>Saved memories</h2><div id="memoryList"></div></div>
+</div>
+<script src="script.js"></script>
+</body></html>

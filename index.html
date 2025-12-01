@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ayaz & Dhunna — Forever</title>
+<link href="style.css" rel="stylesheet">
+<script src="password.js"></script>
+</head>
+<body onload="initPassword()">
+<div id="lockScreen" class="lock-screen" style="display:none;">
+  <div class="lock-box">
+    <h2 style="color:var(--gold)">Enter password</h2>
+    <input id="passInput" placeholder="Password">
+    <div style="margin-top:12px"><button onclick="checkPassword()" style="padding:10px 14px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#ffb3c9);border:none;color:#fff">Enter</button></div>
+    <p id="passMsg"></p>
+  </div>
+</div>
+
+<div id="siteContent" style="display:none">
+  <div class="container">
+    <div class="header">
+      <div class="brand">Ayaz & Dhunna</div>
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="story.html">Our Story</a>
+        <a href="memories.html">Memories</a>
+        <a href="settings.html">Settings</a>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="slideshow" id="slideshow"></div>
+      <div class="hero-overlay">
+        <div class="hero-title">Forever begins with you</div>
+        <div class="hero-sub">Our wedding — 26 June 2026 · Ramen House memories</div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <div>
+        <div class="panel">
+          <h3>Wedding Countdown</h3>
+          <div id="countdown" class="small">Loading…</div>
+        </div>
+
+        <div class="panel" style="margin-top:16px">
+          <h3>Days since we met</h3>
+          <div id="daysTogether" class="small">Loading…</div>
+        </div>
+
+        <div class="panel" style="margin-top:16px">
+          <h3>Gallery preview</h3>
+          <div id="galleryGridHome" class="gallery" style="margin-top:12px"></div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="panel">
+          <h3>Love notes</h3>
+          <div class="small">"You are my favorite hello and hardest goodbye."</div>
+        </div>
+
+        <div class="panel" style="margin-top:12px">
+          <button class="heart-btn" title="Toggle hearts" onclick="toggleHearts()">♡</button>
+          <button class="music-btn" title="Play/Pause music" onclick="toggleMusic()">♫</button>
+        </div>
+      </aside>
+    </div>
+
+    <div class="footer">Made with all my heart · Ayaz ❤️ Dhunna</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
